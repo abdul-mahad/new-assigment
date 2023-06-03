@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Budgeting App</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+    
+    </style>
+  </head>
+  <body>
+    <h1>Budget App</h1>
+    <form id="budgetForm">
+      <input
+        type="number"
+        id="budgetInput"
+        placeholder="Enter Monthly Budget"
+        required
+      />
+      <button type="submit">Add Budget</button>
+    </form>
+
+ 
+    <form id="expenseForm">
+      <h2>Add Expense</h2>
+      <input
+        type="text"
+        id="expenseDescription"
+        placeholder="Description"
+        required
+      />
+      <input type="number" id="expenseAmount" placeholder="Amount" required />
+      <input type="date" id="expenseDate" required />
+      <button type="submit">Add Expense</button>
+    </form>
+    <h2 class="expenceCenter">Expenses</h2>
+    <div class="container">
+      <table id="expenseTable" style="border: 1px solid black">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th style="padding-left: 1rem">Amount</th>
+            <th style="padding-left: 1rem">Date</th>
+          </tr>
+        </thead>
+        <tbody>
+   
+        </tbody>
+      </table>
+    </div>
+    <div class="centerAlign">
+      <h2>Remaining Budget: $<span id="remainingBudget"></span></h2>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
